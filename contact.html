@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumith's Portfolio</title>
+    <link rel="icon" href="./assets/favicon.png" type="image/png">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap" rel="stylesheet">
+
+    <!-- aos effect -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        /* Contact form */
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #001660;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form
+{
+background: #fff;
+display: flex;
+flex-direction: column;
+padding: 2vw 4vw;
+width: 90%;
+max-width: 600px;
+border-radius: 10px;
+}
+form h3{
+color: #555;
+font-weight: 800;
+margin-bottom: 20px;
+}
+form input, form textarea{
+border: 0;
+margin: 10px 0;
+padding: 20px;
+outline: none;
+background: #f5f5f5;
+font-size: 16px;
+}
+
+form button{
+padding: 15px;
+background: #ff5361;
+color: #fff;
+font-size: 18px;
+border: 0;
+outline: none;
+cursor: pointer; 
+width: 150px;
+margin: 20px auto 0;
+border-radius: 30px;
+}
+#form
+{
+    align-items: center;
+    box-sizing: border-box;
+}
+
+    </style>
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <div class="logo">
+                <span>&lt; Sumith thota /&gt;</span>
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link effect" href="index.html">Home</a>
+              <a class="nav-link effect" href="education.html">Education</a>
+              <a class="nav-link effect" href="skill.html">Skills</a>
+              <a class="nav-link effect" href="projects.html">Projects</a>
+              <a class="nav-link effect" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <section id="contact" data-aos="fade-up">
+        <div class="contact-img">
+            <img src="./assets/sumith.png" alt="">
+        </div>
+        <div class="contact-detail">
+            <div class="contact-me">Contact Me</div>
+            <p>I am available on almost every social media. You can message me anytime, I will reply within 24 hours. I can
+                help you with web development related problems. It will make me happy to help you.</p>
+                <div class="social-media">
+                    <a href="https://github.com/SumithThota"><img src="./assets/github.png" alt="" class="socicons"></a>
+                    <a href="https://www.linkedin.com/in/sumith-thota-920033235/"><img src="./assets/linkedin.svg " class="socicons"
+                            alt=""></a>
+                    <a href="https://www.facebook.com/sumith.p.thota"><img src="./assets/fb.svg" class="socicons" alt=""></a>
+                    <a href="https://x.com/Sumiththota1"><img src="./assets/x-round.jpg" class="socicons" alt=""></a>
+                    <!-- <a href="#"><img src="./assets/instagram.png" alt="" class="socicons"></a> -->
+                    <a href="https://t.me/sumiththota"><img src="./assets/telegram.svg" class="socicons" alt=""></a>
+                </div>
+        </div>
+    </section>
+
+    <section id="form">
+        <div class="container">
+            <form onsubmit="sendMail(); reset(); return false;">
+                <h3>GET IN TOUCH</h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Email Id" required>
+                <input type="text" id="phone" placeholder="Phone no." required>
+                <textarea id="message" rows="4" placeholder="How can I help you?"></textarea>
+                <button type="submit">Send</button>
+                </form>
+        </div>
+       
+    </section>
+
+
+    <section id="address">
+        <div class="map" data-aos="fade-right">
+            <div class="adr-title">Address</div>
+            <div class="adr">Karimnagar, Telangana, India</div>
+            <a href="https://maps.app.goo.gl/C6NrSYp9KU5PbiN79" class="btn">Visit on Google Maps</a>
+        </div>
+        <div class="address-img" data-aos="fade-left">
+            <img src="./assets/address.svg" alt="">
+        </div>
+    </section>
+
+    <footer>Made With <span>&hearts;</span> by Sumith thota</footer>
+    <!-- AOS Animation Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Bootstrap 5 JS (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <script>
+        function sendMail()
+        {
+            Email.send({
+            SecureToken : "15f2f61b-2e60-4e63-8a96-e2ed0f5587f1",
+            To : 'thotasumith02@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "New Mail recieved",
+            Body : "Name:"+document.getElementById("name").value +
+                   "<br>Email:"+document.getElementById("email").value +
+                   "<br>Phone NO.:"+document.getElementById("phone").value +
+                   "<br>Message:"+document.getElementById("message").value 
+
+        }).then(
+        message => alert("Message sent Successfully")
+        );
+        }
+    </script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
+
